@@ -6,6 +6,8 @@
   <title>Psychic Game</title>
   <link rel="stylesheet" type="text/css" href="assets/style.css">
   <link href="https://fonts.googleapis.com/css?family=Felipa" rel="stylesheet">
+ 
+
 </head>
 
 <body>
@@ -19,10 +21,15 @@
     <p id="losses-text"></p>
     <p id="guesses-left"></p>
     <p id="guesses-made"></p>
-
+    <audio autoplay>
+            <source src="assets/East-of-Tunesia.mp3" type="audio/mpeg">
+    </audio>
   </div>
-
+    
   <script type="text/javascript">
+
+    
+
 
     var computerChoices = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 
@@ -38,6 +45,8 @@
     var lossesText = document.getElementById("losses-text");
     var leftText = document.getElementById("guesses-left");
     var madeText = document.getElementById("guesses-made");
+    var audioElement = document.createElement("audio");
+    
 
 
     var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];

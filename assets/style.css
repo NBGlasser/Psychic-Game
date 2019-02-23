@@ -5,7 +5,7 @@ body {
     font-family: 'Felipa', cursive;
 }
 #wins-text {
-    color: gold
+    color: rgb(18, 194, 18);
 }
 
 #losses-text {
