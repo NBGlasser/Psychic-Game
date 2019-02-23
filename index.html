@@ -4,12 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <title>Psychic Game</title>
+  <link rel="stylesheet" type="text/css" href="assets/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Felipa" rel="stylesheet">
 </head>
 
 <body>
-
+    <h1>Can You Outsmart Zoltar???</h1>
+    <img src="assets/Zoltar.jpg" alt="Zoltar">
   <div>
-    <p id="directions-text">Press a letter to start playing!</p>
+    <p id="directions-text">Press any letter to find out!</p>
     <p id="userchoice-text"></p>
     <p id="computerchoice-text"></p>
     <p id="wins-text"></p>
@@ -50,6 +53,7 @@
         if(userGuess === computerGuess){
             wins++;
             guessesLeft = 10;
+            guessesMade = [];
         }
         else{
             guessesLeft--;
@@ -60,7 +64,8 @@
         if(guessesLeft === 0){
             losses++;
             guessesLeft = 10;
-            computerChoiceText.textContent = "The computer chose: " + computerGuess;
+            computerChoiceText.textContent = "Zoltar chose: " + computerGuess;
+            guessesMade = [];
         }
 
         userChoiceText.textContent = "You chose: " + userGuess;

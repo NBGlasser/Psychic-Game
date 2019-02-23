@@ -1,0 +1,23 @@
+body {
+    background: black;
+    color: purple;
+    text-align: center;
+    font-family: 'Felipa', cursive;
+}
+#wins-text {
+    color: gold
+}
+
+#losses-text {
+    color: red;
+}
+
+h1 {
+    font-size: 36px;
+    margin: 3px;
+}
+
+p {
+    font-size: 26px;
+    margin: 4px;
+}
